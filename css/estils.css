@@ -5,8 +5,10 @@
   --dark-grey: #333333;
   --white: #ffffff;
 }
+
 body {
-  background-color: var(--orange);
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -21,18 +23,19 @@ p {
 
 .hero {
   padding: 64px;
+  background: linear-gradient(180deg, #fcb782 85%, #fff 85%, #fff 100%);
 }
 
 .container {
-  border: 1px solid black;
   display: flex;
   max-width: 1312px;
   margin: auto;
 }
 .column {
   width: 50%;
-  border: 1px solid red;
+  position: relative;
 }
+
 .heading-wrapper {
   margin-top: 70px;
   display: flex;
@@ -128,7 +131,23 @@ h3 {
   text-decoration: none;
   text-transform: none;
 }
-
+.shape {
+  position: absolute;
+  right: 0px;
+  border-radius: 0 0 400px 400px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  width: 580px;
+  height: 790px;
+  z-index: 0;
+}
+.Toy {
+  position: relative;
+  z-index: 1;
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
