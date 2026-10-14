@@ -195,11 +195,6 @@ body {
   width: 413px;
   height: 87px;
 }
-.section-label {
-  color: #b78c70;
-  font-size: 20px;
-  height: 17px;
-}
 .works-header-h1 {
   font-family: Helvetica Neue;
   font-size: clamp(49px, 8vw, 80px);
